@@ -1,5 +1,4 @@
-import colorama
-import math,datetime
+
 
 # MRO
 
@@ -36,6 +35,8 @@ class Human2(Human):
     def dancho_bratan(self):
         print(f'Возраст: {self.age}')
 
+    def count(self):
+        print(f'Ч/сло методов в классе: {len(dir(self))}')
     def wh(self):
         while True:
             Human2.aldik(self)
@@ -45,7 +46,8 @@ class Human2(Human):
               f'3-дата рождения\n'
               f'4-машина\n'
               f'5-ориентация\n'
-              f'6-выход')
+              f'6-методы\n'
+              f'7-выход')
         a = int(input('Введите число: '))
         if a == 1:
             Human2.emka(self)
